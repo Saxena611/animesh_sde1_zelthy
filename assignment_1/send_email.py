@@ -33,7 +33,7 @@ if login:
     subject = str(input("Subject ?"))
     body = str(input("Body ?"))
     recipient = str(input("Recipients ?"))
-    mailbotobj = mail_sender.MailBot('animeshsaxena78@gmail.com','mummyanimeshAM123',('smtp.gmail.com',587),False)
+    mailbotobj = mail_sender.MailBot(sender,pwd,('smtp.gmail.com',587),False)
     mailbotobj.set_message(body,subject,"Animesh Saxena")
     mailbotobj.set_recipients([recipient])
     mailbotobj.connect()
