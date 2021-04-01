@@ -21,7 +21,6 @@ count = 3
 login = False
 while count != 0:
     password2 = getpass.getpass()
-    print(password2)
     if obj.validate_login(password2):
         login = True
         print("User login success ! Proceed to send mail.")
